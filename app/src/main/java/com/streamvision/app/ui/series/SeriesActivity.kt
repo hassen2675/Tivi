@@ -43,8 +43,8 @@ class SeriesActivity : AppCompatActivity() {
                 .setTitle(series.name)
                 .setMessage(buildString {
                     series.releaseDate?.take(4)?.let { append("📅 $it\n") }
-                    series.genre?.let { append("🎭 $it\n") }
-                    series.plot?.let { append("\n$it") }
+                    // genre not available
+                   // plot not available
                 })
                 .setPositiveButton("Schließen", null)
                 .show()
